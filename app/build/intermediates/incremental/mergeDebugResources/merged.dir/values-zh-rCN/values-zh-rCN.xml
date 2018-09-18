@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Iris_Recognition_size">30sp</dimen>
+    <dimen name="Recognition_content_size">15sp</dimen>
+    <dimen name="abount_content_size">18sp</dimen>
+    <dimen name="mode_changed_padding_left">15dp</dimen>
+    <dimen name="over_time_size">24sp</dimen>
+    <dimen name="setview_text_size">16sp</dimen>
+    <dimen name="start_activity_Iris_recong_margin">230dp</dimen>
+    <string name="Avoid_sun">●    避免在环境光照过强的区域注册</string>
+    <string name="Cartoon">卡通</string>
+    <string name="Delete_Template">删除模板</string>
+    <string name="Iris_Recognition">虹膜识别</string>
+    <string name="Is_registered_in">正在注册中...</string>
+    <string name="Look_straight">●    眼睛平视设备并保持稳定</string>
+    <string name="Move_device">●    调整眼睛与设备的相对距离保证双眼落入圆形框</string>
+    <string name="Normal">普通</string>
+    <string name="OK">确认</string>
+    <string name="Periocular_Registration">Periocular Registration</string>
+    <string name="Recognition_content">通过识别用户的虹膜实现手机解锁</string>
+    <string name="Register">注册</string>
+    <string name="Register_Face">Register Face</string>
+    <string name="Register_with_Glasses">Register with Glasses</string>
+    <string name="Registration_is_not_lisght">并在非强光区域注册</string>
+    <string name="Secure_convenient">Secure and Convenient</string>
+    <string name="Verify">识别</string>
+    <string name="Verify_Iris_and_Face">Iris and Face</string>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"转到主屏幕"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s：%2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s - %2$s：%3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"转到上一层级"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"更多选项"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"完成"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"查看全部"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"选择应用"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"关闭"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"开启"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"搜索…"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"清除查询"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"搜索查询"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"搜索"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"提交查询"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"语音搜索"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"分享方式"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"通过%s分享"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"收起"</string>
+    <string name="abnormallight">光线过强</string>
+    <string name="app_name">IrisKing</string>
+    <string name="back">返回</string>
+    <string name="back_homepage">返回首页</string>
+    <string name="blink_several_times">请眨眼</string>
+    <string name="continue_registration">继续注册</string>
+    <string name="continue_verify">继续识别</string>
+    <string name="enroll_timeout">注册超时</string>
+    <string name="fakeeye">检测到假眼</string>
+    <string name="finish">完成</string>
+    <string name="iden_failed">识别失败</string>
+    <string name="iden_timeout">识别超时</string>
+    <string name="identify_complete">识别成功</string>
+    <string name="identify_remove_glass">请摘掉眼镜</string>
+    <string name="indoor_register">请在室内注册</string>
+    <string name="invaliddate">设备授权过期</string>
+    <string name="invaliddevice">设备未授权</string>
+    <string name="is_verify_in">正在识别中...</string>
+    <string name="lock_screen_tooclose">This distance is too close \n Please press  the unlock button.</string>
+    <string name="make_sure_remove_glass">请确认摘掉眼镜</string>
+    <string name="mobile_use_more"> </string>
+    <string name="move_closer">请靠近</string>
+    <string name="move_father">请远离</string>
+    <string name="move_left">请左移</string>
+    <string name="move_right">请右移</string>
+    <string name="no_feature">没有特征,请先注册</string>
+    <string name="noeyedetected">没有检测到眼睛</string>
+    <string name="open_eye">●    请睁开眼睛"</string>
+    <string name="register_success">注册完成</string>
+    <string name="register_too_close">注册距离过近\n请重新注册</string>
+    <string name="remove_glass">注册时，请摘掉眼镜</string>
+    <string name="remove_glass_continue">请摘掉眼镜后\n重新注册</string>
+    <string name="remove_glass_continue_verify">摘掉眼镜后\n重新识别</string>
+    <string name="restart_register">请重新注册</string>
+    <string name="scanning">扫描中...</string>
+    <string name="screen_lock_timeout">Timeout\n Please press the unlock button.</string>
+    <string msgid="146198913615257606" name="search_menu_title">"搜索"</string>
+    <string name="startContinueIdentify">连续识别</string>
+    <string name="startIdentify">开始识别</string>
+    <string name="startRegister">开始注册</string>
+    <string name="start_identify">开始识别</string>
+    <string name="start_register">开始注册</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="still_register">仍然注册</string>
+    <string name="stopContinueIdentify">停止识别</string>
+    <string name="stopIdentify">停止识别</string>
+    <string name="stopRegister">停止注册</string>
+    <string name="tips">提示</string>
+    <string name="un_lock">UNLOCK</string>
+    <string name="unlock_phone">今后通过虹膜识别来解锁手机</string>
+    <string name="verify_tooclose">识别距离过近\n请调整距离后重新识别</string>
+</resources>

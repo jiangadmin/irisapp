@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <!--<declare-styleable name="ThermometerView">-->
+        <!--<attr name="thermometerWidth" format="dimension"></attr>-->
+        <!--<attr name="thermometerHeight" format="dimension"></attr>-->
+        <!--<attr name="degreeLength" format="dimension"></attr>-->
+        <!--<attr name="mercuryLength" format="dimension"></attr>-->
+        <!--<attr name="mercuryPadding" format="dimension"></attr>-->
+        <!--<attr name="fillColor" format="color"></attr>-->
+        <!--<attr name="degreeColor" format="color"></attr>-->
+        <!--<attr name="mercuryDefaultColor" format="color"></attr>-->
+        <!--<attr name="mercuryFillColor" format="color"></attr>-->
+        <!--<attr name="mercuryDarkColor" format="color"></attr>-->
+        <!--<attr name="minValue" format="dimension"></attr>-->
+        <!--<attr name="maxValue" format="dimension"></attr>-->
+    <!--</declare-styleable>-->
+
+    <declare-styleable name="ThermometerView">
+        <attr name="thermometerWidth" format="integer"></attr>
+        <attr name="thermometerHeight" format="integer"></attr>
+        <attr name="minValue" format="integer"></attr>
+        <attr name="maxValue" format="integer"></attr>
+        <attr name="degreeLength" format="integer"></attr>
+        <attr name="mercuryLength" format="integer"></attr>
+        <attr name="degreeOffset" format="integer"></attr>
+        <attr name="mercuryMargin" format="integer"></attr>
+        <attr name="mercuryRadius" format="integer"></attr>
+        <attr name="mercuryPadding" format="integer"></attr>
+        <attr name="degreeColor" format="color"></attr>
+        <attr name="mercuryDefaultColor" format="color"></attr>
+        <attr name="mercuryFillColor" format="color"></attr>
+        <attr name="mercuryDarkColor" format="color"></attr>
+        <attr name="fillBackgroundColor" format="color"></attr>
+    </declare-styleable>
+
+    <!--<declare-styleable name="CircleProgress">-->
+        <!--<attr name="radius" format="dimension" />-->
+        <!--<attr name="strokeWidth" format="dimension" />-->
+        <!--<attr name="circleColor" format="color" />-->
+        <!--<attr name="ringColor" format="color" />-->
+    <!--</declare-styleable>-->
+</resources>

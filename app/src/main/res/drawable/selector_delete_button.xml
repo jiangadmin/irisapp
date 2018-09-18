@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 没有焦点时颜色 -->
+    <item android:drawable="@drawable/ic_delete_default_icon"  android:state_pressed="false" />
+    <!--选中时的颜色  -->
+    <item android:drawable="@drawable/ic_delete_focused_icon"  android:state_pressed="true" />
+
+    <!-- 没有焦点时颜色 -->
+    <!--<item android:drawable="@drawable/ic_delete_default_icon" />-->
+    <!--<item android:drawable="@drawable/ic_delete_default_icon" android:state_window_focused="false" />-->
+    <!--选中时的颜色  -->
+    <!--<item android:drawable="@drawable/ic_delete_focused_icon" android:state_focused="true" android:state_pressed="true" />-->
+    <!--<item android:drawable="@drawable/ic_delete_focused_icon" android:state_focused="false" android:state_pressed="true" />-->
+    <!--<item android:drawable="@drawable/ic_delete_focused_icon" android:state_focused="true" />-->
+    <!--<item android:drawable="@drawable/ic_delete_focused_icon" android:state_selected="true" />-->
+    <!--<item android:drawable="@drawable/ic_delete_focused_icon"  android:state_pressed="true" />-->
+</selector>

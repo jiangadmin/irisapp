@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_big"
+        android:layout_width="@dimen/x1000"
+        android:layout_height="@dimen/y563"
+        android:layout_marginLeft="@dimen/x33"
+        android:layout_marginTop="@dimen/y33"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_mask"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_mask"-->
+        <!--android:visibility="gone"/>-->
+
+        <SurfaceView
+            android:id="@+id/iv_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_mask" />
+
+        <com.irisking.scanner.view.custom.RoundProgressBar
+            android:id="@+id/roundProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="true"
+            android_custom:roundColor="#00000000"
+            android_custom:roundProgressColor="#299bd7"
+            android_custom:roundWidth="@dimen/x10"
+            android_custom:textIsDisplayable="false" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.irisking.scanner.view.custom.EyeScannerView
+                android:id="@+id/leftEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.irisking.scanner.view.custom.EyeScannerView
+                android:id="@+id/rightEye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ie_final_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y55"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="#FF0000"
+            android:textSize="@dimen/x46" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_left_progressBar"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y510"
+        android:layout_alignTop="@+id/frame_big"
+        android:layout_alignLeft="@+id/frame_big"
+        android:layout_marginTop="@dimen/y20"
+        android:orientation="vertical">
+
+        <com.irisking.scanner.view.custom.CustomLeftThermometerView
+            android:id="@+id/custom_left_thermometer_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progressBar"
+        style="@style/custom_horizontal_progressBar"
+        android:layout_width="@dimen/x1000"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x33"
+        android:layout_alignBottom="@+id/frame_big"
+        android:max="100" />
+
+    <LinearLayout
+        android:id="@+id/ll_eye_distance"
+        android:layout_width="@dimen/x1000"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/frame_big"
+        android:layout_marginBottom="@dimen/y60"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_current_eye_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/x36" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_left_eye_distance"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="@dimen/x25"-->
+        <!--android:textColor="#ff0000"-->
+        <!--android:textSize="@dimen/x36" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_right_eye_distance"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="@dimen/x25"-->
+        <!--android:textColor="#ff0000"-->
+        <!--android:textSize="@dimen/x36" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/frame_big"
+        android:layout_alignTop="@+id/frame_big"
+        android:layout_above="@+id/view_line"
+        android:layout_marginLeft="@dimen/x54"
+        android:layout_marginRight="@dimen/x33"
+        android:layout_marginBottom="@dimen/y30"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:layout_above="@+id/ll_menu"
+        android:background="#cccccc" />
+
+    <RadioGroup
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y144"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <com.irisking.scanner.view.custom.CustomRadioButton
+            android:id="@+id/start_register_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:drawableStart="@drawable/selector_radio_button_register_drawable_land"
+            android:drawablePadding="@dimen/x15"
+            android:text="开始注册"
+            android:textColor="@drawable/selector_radio_button_text_color"
+            android:textSize="@dimen/x44" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="#cccccc" />
+
+        <com.irisking.scanner.view.custom.CustomRadioButton
+            android:id="@+id/start_recognize_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_radio_button_recognize_drawable_land"
+            android:drawablePadding="@dimen/x15"
+            android:text="开始识别"
+            android:textColor="@drawable/selector_radio_button_text_color"
+            android:textSize="@dimen/x44" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="#cccccc" />
+
+        <com.irisking.scanner.view.custom.CustomRadioButton
+            android:id="@+id/continue_identify_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_radio_button_continue_drawable_land"
+            android:drawablePadding="@dimen/x15"
+            android:text="连续识别"
+            android:textColor="@drawable/selector_radio_button_text_color"
+            android:textSize="@dimen/x44" />
+    </RadioGroup>
+
+    <com.irisking.scanner.view.custom.CustomTopGuideView
+        android:id="@+id/top_guide_view"
+        android:layout_width="@dimen/x1000"
+        android:layout_height="@dimen/y563"
+        android:layout_marginLeft="@dimen/x33"
+        android:layout_marginTop="@dimen/y33" />
+
+    <com.irisking.scanner.view.custom.CustomBottomGuideView
+        android:id="@+id/bottom_guide_view"
+        android:layout_width="@dimen/x1000"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/y30"
+        android:layout_marginLeft="@dimen/x33"
+        android:layout_marginRight="@dimen/x54"
+        android:layout_marginBottom="@dimen/y48"
+        android:layout_above="@+id/view_line"
+        android:layout_below="@+id/frame_big" />
+
+    <com.irisking.scanner.view.custom.CustomRightGuideView
+        android:id="@+id/right_guide_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x54"
+        android:layout_marginRight="@dimen/x33"
+        android:layout_marginBottom="@dimen/y48"
+        android:layout_toRightOf="@+id/frame_big"
+        android:layout_alignTop="@+id/frame_big"
+        android:layout_above="@+id/view_line" />
+</RelativeLayout>
